@@ -8,7 +8,6 @@ public class GameAssets : MonoBehaviour
 
     public Sprite frogSprite;
 
-    // Start is called before the first frame update
     void Awake()
     {
         if (Instance != null) {

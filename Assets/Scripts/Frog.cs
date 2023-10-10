@@ -11,8 +11,6 @@ public class Frog : MonoBehaviour
     private float gridMoveTimer;
     private float gridMoveTimerMax = 1f;
 
-    //private LevelGrid levelGrid;
-
     private bool hasInput = false; //Check if there is already an input
 
     void Awake()
