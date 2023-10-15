@@ -51,9 +51,9 @@ public class Frog : MonoBehaviour
         //Pressed E
         if (Input.GetKey(KeyCode.E) && !hasInput)
         {
-            if (gridMoveDirection.x != gridMoveDirection.y) // Check if its going horizontal
+            if (gridMoveDirection.x != gridMoveDirection.y) // Check if going diagonal down
             {
-                //Change direction to UP
+                //Change direction
                 gridMoveDirection.x = 1;
                 gridMoveDirection.y = 1;
                 hasInput = true;
@@ -63,9 +63,9 @@ public class Frog : MonoBehaviour
         //Pressed Q
         if (Input.GetKey(KeyCode.Q) && !hasInput)
         {
-            if (gridMoveDirection.x == gridMoveDirection.y)
+            if (gridMoveDirection.x == gridMoveDirection.y) //Check if going diagonal up
             {
-                //Change direction to DOWN
+                //Change direction
                 gridMoveDirection.x = -1;
                 gridMoveDirection.y = 1;
                 hasInput = true;
@@ -77,7 +77,7 @@ public class Frog : MonoBehaviour
         {
             if (gridMoveDirection.x == gridMoveDirection.y)
             {
-                //Change direction to RIGHT
+                //Change direction
                 gridMoveDirection.x = 1;
                 gridMoveDirection.y = -1;
                 hasInput = true;
@@ -90,7 +90,7 @@ public class Frog : MonoBehaviour
         {
             if (gridMoveDirection.x != gridMoveDirection.y)
             {
-                //Change direction to LEFT    
+                //Change direction     
                 gridMoveDirection.x = -1;
                 gridMoveDirection.y = -1;
                 hasInput = true;
